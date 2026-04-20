@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saved Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 320px;
+      padding: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    li {
+      margin-bottom: 6px;
+      padding: 4px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .link {
+      cursor: pointer;
+      color: #1a73e8;
+      text-decoration: underline;
+      flex-grow: 1;
+      margin-right: 6px;
+      word-break: break-word;
+    }
+    button {
+      margin-left: 4px;
+    }
+    .controls {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <h3>Saved Links</h3>
+  <ul id="linkList"></ul>
+
+  <div class="controls">
+    <button id="exportBtn">Export</button>
+    <button id="clearBtn">Clear All</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

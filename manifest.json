@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Link List Saver",
+  "version": "1.0",
+  "description": "Save links from context menu and manage them.",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Saved Links"
+  }
+}
